@@ -1,0 +1,15 @@
+version: "3.7"
+services:
+  run:
+    build: .
+    volumes: 
+      - ./code:/code
+    command: sh -c "g++ -o game *.cpp -std=c++14 && ./game"
+    cap_drop: 
+      - ALL
+    network_mode: "none"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.25'
+          memory: 250M

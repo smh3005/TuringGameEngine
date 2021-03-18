@@ -1,0 +1,3 @@
+FROM gcc:4.9
+WORKDIR /code
+USER 1000
