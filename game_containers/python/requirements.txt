@@ -1,0 +1,10 @@
+tensorflow
+numpy
+pandas
+torch
+scipy
+scikit-learn
+keras
+pyspark
+theano
+mxnet
